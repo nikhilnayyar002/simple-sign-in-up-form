@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=40">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="input-styles.css">
+    <link rel="stylesheet" href="form.css">
+    <script defer src="form.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="body">
+
+            <form id="form-container">
+                <div class="slider" style="position: relative">
+                        <div id="form-tab">
+                                <span id="sign-in-btn">SignIn</span>
+                                <span id="sign-up-btn">SignUp</span>
+                            </div>
+            
+                            <div id="user-name" class="input-container">
+                                <input class="input-field effect-1" type="text" autocomplete="off" placeholder="Username" name="usrnm">
+                                <span class="focus-border"></span>
+                            </div>
+                            <div id="user-name-error"  class="input-error" style="display: none">
+                                User Name is required.
+                            </div>
+            
+                            <div class="input-container">
+                                <input class="input-field effect-1" type="text" autocomplete="off" placeholder="Email" name="email">
+                                <span class="focus-border"></span>
+                            </div>
+                            <div id="email-error"  class="input-error" style="display: none">
+                                    Email is Incorrect.
+                            </div>
+            
+                            <div class="input-container">
+                                <input class="input-field effect-1" type="password" placeholder="Password" name="psw">
+                                <span class="focus-border"></span>
+                            </div>
+            
+                            <ul id="psw-error" class="input-error" style="margin-left: 10px; display: none">
+                                   <li>Length should between 8-20 characters</li>
+                                   <li>Should contain atleast one lowercase and uppercase character</li>
+                                   <li>Should contain atleast one special character</li>
+                            </ul>
+            
+                            <button id="submit-btn" type="submit" class="btn">SignUp</button>
+                </div>
+            </form>
+
+            <table id="userProfile" class="table-fill">
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="text-center">User Profile</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Full Name</td>
+                            <td id="table-data-fullname"></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td  id="table-data-email"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="text-center">
+                                <button id="logout-btn" class="btn" style="background: #211c21; width:auto">Logout</button>
+                            </td>
+                        </tr>
+                    </tbody>
+            </table>
+                  
+
+
+
+
+        </div>
+        <div id="footer">
+            <span class="footer-text">&copy;2019 company</span>
+        </div>
+    </div>
+
+</body>
+
+</html>
